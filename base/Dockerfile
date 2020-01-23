@@ -10,6 +10,13 @@ RUN conda install --yes \
     numpy==1.17.3 \
     pandas==0.25.2 \
     tini==0.18.0 \
+    xarray \
+    netcdf4 \
+    zarr \
+    fsspec \
+    s3fs \
+    h5py \
+    h5netcdf \
     && conda clean -tipsy \
     && find /opt/conda/ -type f,l -name '*.a' -delete \
     && find /opt/conda/ -type f,l -name '*.pyc' -delete \
